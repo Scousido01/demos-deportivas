@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 56" role="img" aria-label="Florida Gym (logo provisional)">
+  <circle cx="24" cy="28" r="20" fill="#E8262D"/>
+  <path d="M15 18h18v6H22v5h9v6h-9v8h-7z" fill="#0B0B0D"/>
+  <text x="54" y="40" textLength="170" lengthAdjust="spacingAndGlyphs" font-family="Anton, Oswald, Impact, 'Arial Narrow', sans-serif" font-weight="700" font-size="28" fill="#F4F4F5">FLORIDA<tspan fill="#FFD23F"> GYM</tspan></text>
+</svg>
