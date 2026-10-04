@@ -1,0 +1,13 @@
+/* Nicho gimnasio: oscuro, enérgico, titulares grandes en mayúsculas. */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap");
+
+:root {
+  --fuente-titulos: "Anton", Impact, sans-serif;
+  --fuente-texto: "Inter", system-ui, sans-serif;
+  --radio: 6px;
+}
+h1, h2 { text-transform: uppercase; letter-spacing: .01em; }
+h1 { font-size: clamp(2.8rem, 10vw, 6rem); }
+.boton { border-radius: 4px; text-transform: uppercase; letter-spacing: .04em; }
+.datos strong { color: var(--color-secundario); }
+.tarifa.destacada { background: color-mix(in srgb, var(--color-primario) 12%, var(--color-fondo)); }

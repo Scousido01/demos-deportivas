@@ -1,0 +1,12 @@
+{
+  "name": "demos-deportivas",
+  "private": true,
+  "description": "Plantilla y demos web para gimnasios, clubes y entrenadores",
+  "type": "module",
+  "scripts": {
+    "nueva": "node scripts/nueva-demo.mjs",
+    "construir": "node scripts/construir.mjs",
+    "todas": "node scripts/construir.mjs --todas",
+    "ver": "npx --yes serve dist"
+  }
+}

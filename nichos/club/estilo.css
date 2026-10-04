@@ -1,0 +1,13 @@
+/* Nicho club: colores del escudo, tipografía deportiva y franja de club. */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600&display=swap");
+
+:root {
+  --fuente-titulos: "Barlow Condensed", system-ui, sans-serif;
+  --fuente-texto: "Barlow", system-ui, sans-serif;
+  --radio: 10px;
+}
+h1, h2 { text-transform: uppercase; }
+.cabecera { border-bottom: 4px solid var(--color-secundario); }
+.boton { background: var(--color-secundario); color: var(--color-fondo); }
+.datos strong { color: var(--color-secundario); }
+.tarifa.destacada { border-color: var(--color-secundario); }
