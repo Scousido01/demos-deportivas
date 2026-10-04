@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-label="Forja Box">
+  <rect x="2" y="8" width="40" height="40" rx="4" fill="#FF4D00"/>
+  <path d="M14 18h18v6H21v5h9v6h-9v7h-7z" fill="#0B0B0D"/>
+  <text x="54" y="40" textLength="160" lengthAdjust="spacingAndGlyphs" font-family="Anton, Oswald, Impact, 'Arial Narrow', sans-serif" font-weight="700" font-size="28" fill="#F4F4F5">FORJA<tspan fill="#C6FF00"> BOX</tspan></text>
+</svg>
