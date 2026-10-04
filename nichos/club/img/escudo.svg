@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Escudo del club">
+  <path d="M60 4 L112 18 V70 C112 104 88 126 60 136 C32 126 8 104 8 70 V18 Z" fill="#0b5d1e" stroke="#f2c230" stroke-width="6"/>
+  <path d="M60 14 L102 25 V44 H18 V25 Z" fill="#f2c230"/>
+  <text x="60" y="40" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="15" font-weight="900" fill="#0b5d1e">1978</text>
+  <g stroke="#f2c230" stroke-width="5" fill="none">
+    <path d="M24 64 Q42 54 60 64 T96 64"/>
+    <path d="M24 80 Q42 70 60 80 T96 80"/>
+  </g>
+  <text x="60" y="114" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="#ffffff">ATR</text>
+</svg>
