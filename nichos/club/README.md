@@ -31,6 +31,6 @@ En un cliente se cambian `config.js` (nombre, colores, partidos, noticias, clasi
 contacto) y `img/escudo.svg`. Las imágenes son los marcadores de `base/img`; las fotos reales van
 en `recursos/club/` o en `img/` del cliente.
 
-## Requisito en base
-`nicho.js` se carga con `<script src="nicho.js"></script>` justo después de `js/app.js` en
-`base/index.html` (con un `base/nicho.js` vacío por defecto, igual que `estilo.css`).
+## Cómo se carga
+`base/index.html` carga `nicho.js` justo después de `js/app.js`; en `base/` es un archivo vacío y
+`construir.mjs` lo sustituye por el de esta carpeta, igual que `estilo.css`.
