@@ -1,0 +1,11 @@
+/* Nicho entrenador: claro, limpio y personal. */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --fuente-titulos: "DM Serif Display", Georgia, serif;
+  --fuente-texto: "DM Sans", system-ui, sans-serif;
+  --radio: 20px;
+}
+.portada-media::after { background: linear-gradient(to top, var(--color-fondo) 10%, color-mix(in srgb, var(--color-fondo) 30%, transparent) 80%); }
+.tarjeta, .tarifa, .datos li, .reservas { box-shadow: 0 10px 30px -18px rgb(0 0 0 / .35); }
+.whatsapp-flotante { box-shadow: 0 8px 24px rgb(0 0 0 / .15); }
