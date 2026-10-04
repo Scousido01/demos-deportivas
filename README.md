@@ -27,6 +27,7 @@ base/                 plantilla común
 ├── js/efectos/       un archivo por efecto (ver abajo)
 ├── config.js         configuración de ejemplo con todos los campos comentados
 ├── estilo.css        vacío; cada nicho o cliente pone aquí su estilo
+├── nicho.js          vacío; gancho para secciones propias del nicho (usa window.Demo)
 └── img/              imágenes de marcador
 nichos/               gimnasio, club, entrenador: config.js + estilo.css de cada nicho
 clientes/             una carpeta por lead real (copia de un nicho con sus datos)
