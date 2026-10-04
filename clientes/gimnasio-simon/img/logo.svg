@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 56" role="img" aria-label="Gimnasio Simón">
+  <!-- Logo provisional de la demo: sustituir por el logo real del gimnasio -->
+  <circle cx="28" cy="28" r="25" fill="#B3262D" stroke="#C9A24A" stroke-width="2"/>
+  <circle cx="28" cy="28" r="20" fill="none" stroke="#C9A24A" stroke-width="1"/>
+  <text x="28" y="35" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="900" font-size="20" fill="#F2E9D8">GS</text>
+  <text x="62" y="30" textLength="182" lengthAdjust="spacingAndGlyphs" font-family="'Playfair Display', Georgia, serif" font-weight="900" font-size="24" fill="#F2E9D8">Gimnasio Simón</text>
+  <text x="63" y="47" textLength="180" lengthAdjust="spacing" font-family="'Libre Franklin', Arial, sans-serif" font-weight="700" font-size="9" letter-spacing="3" fill="#C9A24A">VIGO · DESDE 1992</text>
+</svg>
