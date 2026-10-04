@@ -12,6 +12,8 @@ reservas y contacto), `nicho.js` pinta las secciones propias de un club a partir
 |---|---|
 | Próxima eliminatoria de la liga por equipos con cuenta atrás y botón "Añadir a mi calendario" (.ics) | `partidos`, `equipoPrincipal` |
 | Últimos resultados (parejas ganadas) con victoria, empate y derrota en colores | `partidos[].resultado` |
+| Torneos y americanas con botón "Apuntarme" por WhatsApp | `torneos` |
+| Ranking de jugadores del club con medallas y tendencia | `ranking` |
 | Noticias con filtro por categoría (View Transitions si el navegador las soporta) | `noticias` |
 | Calendario agrupado por mes y filtrable por equipo | `partidos` |
 | Clasificación con el club resaltado | `clasificacion` |

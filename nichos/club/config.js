@@ -1,7 +1,7 @@
 /*
  * Nicho club amateur de pádel: colores del club, escudo, noticias, liga por equipos y torneos.
  * Mismos campos que base/config.js, más los propios del club (al final del archivo),
- * que pinta nicho.js: partidos, clasificacion, noticias y patrocinadores.
+ * que pinta nicho.js: partidos, torneos, clasificacion, ranking, noticias y patrocinadores.
  * Las imágenes son marcadores de base/img; las fotos reales van en recursos/club/ o en img/.
  */
 window.DEMO_CONFIG = {
@@ -10,7 +10,7 @@ window.DEMO_CONFIG = {
   portada: {
     titulo: "Juega en el Ribera",
     subtitulo: "8 pistas, escuela para todos los niveles, liga por equipos y torneos cada mes.",
-    boton: "Reserva tu clase de prueba",
+    boton: "Reserva pista o clase",
     imagen: "img/portada.svg",
     video: "",
   },
@@ -38,9 +38,9 @@ window.DEMO_CONFIG = {
   ],
   galeria: ["img/galeria.svg", "img/galeria.svg", "img/galeria.svg", "img/galeria.svg"],
   reservas: {
-    titulo: "Reserva tu clase de prueba",
-    actividades: ["Clase de iniciación", "Clase de perfeccionamiento", "Escuela peques", "Reservar pista"],
-    franjas: ["Mañana", "Tarde", "Noche"],
+    titulo: "Reserva pista o clase",
+    actividades: ["Pista 1 h 30 min", "Clase de prueba (iniciación)", "Clase de perfeccionamiento", "Escuela peques"],
+    franjas: ["Mañana (8:00 – 14:00)", "Tarde (14:00 – 19:00)", "Noche (19:00 – 23:30)"],
   },
   modelo3d: { titulo: "", modelo: "", colores: [] },
   contacto: {
@@ -77,6 +77,28 @@ window.DEMO_CONFIG = {
     { fecha: "2026-10-18T16:00", equipo: "Femenino A", rival: "CP Ribazo", local: true, competicion: "Liga por equipos" },
     { fecha: "2026-10-25T10:00", equipo: "Masculino A", rival: "Fuentefría Pádel", local: true, competicion: "Liga por equipos" },
   ],
+
+  // Torneos y americanas abiertos a inscripción (salen solo los que aún no se han jugado).
+  torneos: [
+    { fecha: "2026-10-09T20:00", tipo: "Americana", nombre: "Americana de los viernes", categorias: "Mixta, nivel medio", precio: "10 € con bolas y cerveza", plazas: "Quedan 6 plazas" },
+    { fecha: "2026-10-10T09:00", tipo: "Torneo", nombre: "Torneo de otoño", categorias: "Masculina, femenina y mixta por niveles", precio: "20 € por jugador", plazas: "Cuadros de 16 parejas" },
+    { fecha: "2026-10-24T10:00", tipo: "Escuela", nombre: "Torneo de la escuela peques", categorias: "De 6 a 14 años", precio: "Gratis para alumnos" },
+    { fecha: "2026-10-30T20:00", tipo: "Americana", nombre: "Americana de Halloween", categorias: "Mixta, todos los niveles", precio: "12 € con cena", plazas: "Disfraz opcional" },
+  ],
+
+  // Ranking interno: suma puntos de torneos, americanas y retos entre socios.
+  ranking: {
+    titulo: "Ranking del club",
+    nota: "Puntos de torneos, americanas y retos entre socios · actualizado el 28 sept",
+    jugadores: [
+      { nombre: "Laura Gil", nivel: "4.5", puntos: 1240, tendencia: "sube" },
+      { nombre: "Dani Ortega", nivel: "4.5", puntos: 1185, tendencia: "igual" },
+      { nombre: "Marta Pardo", nivel: "4.0", puntos: 1120, tendencia: "sube" },
+      { nombre: "Rubén Sanz", nivel: "4.0", puntos: 1090, tendencia: "baja" },
+      { nombre: "Ana Lozano", nivel: "3.5", puntos: 980, tendencia: "sube" },
+      { nombre: "Javi Romero", nivel: "3.5", puntos: 945, tendencia: "baja" },
+    ],
+  },
 
   clasificacion: {
     titulo: "Liga por equipos · 2ª categoría masculina",

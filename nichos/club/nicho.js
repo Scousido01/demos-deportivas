@@ -1,13 +1,14 @@
 /*
  * Secciones propias del nicho club: próximo partido con cuenta atrás, últimos resultados,
- * noticias con filtro, calendario por equipo, clasificación y cinta de patrocinadores.
+ * noticias con filtro, torneos y americanas, calendario por equipo, clasificación,
+ * ranking de jugadores y cinta de patrocinadores.
  * Se carga después de js/app.js y usa sus utilidades (window.Demo). No toca los efectos de base/.
  * Cada sección sale solo si su campo existe en config.js.
  */
 (function () {
   "use strict";
   if (!window.Demo) return;
-  const { config, el, $, $$ } = window.Demo;
+  const { config, el, enlaceWhatsapp, $, $$ } = window.Demo;
   const sinMovimiento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const hayDatos = (v) => Array.isArray(v) ? v.length > 0 : v != null && v !== "";
 
@@ -160,6 +161,41 @@
     return seccion("clasificacion", null, "Clasificación", el("p", { class: "nota", texto: nota }), el("div", { class: "tabla-envoltura" }, tabla));
   }
 
+  // ---- Torneos y americanas con inscripción por WhatsApp ----
+  function seccionTorneos() {
+    const torneos = (config.torneos || [])
+      .map((t) => ({ ...t, d: new Date(t.fecha) }))
+      .filter((t) => t.d >= hoy())
+      .sort((a, b) => a.d - b.d);
+    if (!hayDatos(torneos)) return null;
+    return seccion("torneos", "Torneos", "Torneos y americanas",
+      el("div", { class: "torneos" }, torneos.map((t) => el("article", { class: "torneo" },
+        el("p", { class: "torneo-fecha" }, el("b", { texto: String(t.d.getDate()) }), fmtMes.format(t.d).split(" ")[0]),
+        el("div", { class: "torneo-texto" },
+          el("span", { class: "chip", texto: t.tipo }),
+          el("h3", { texto: t.nombre }),
+          el("p", { class: "nota", texto: [`${fmtSemana.format(t.d)} ${fmtHora.format(t.d)} h`, t.categorias, t.precio].filter(Boolean).join(" · ") }),
+          t.plazas ? el("p", { class: "torneo-plazas", texto: t.plazas }) : null,
+          el("a", { class: "boton", href: enlaceWhatsapp(`Hola, quiero apuntarme a ${t.nombre} (${fmtDia.format(t.d)})`), target: "_blank", rel: "noopener", texto: "Apuntarme" }))))));
+  }
+
+  // ---- Ranking de jugadores del club ----
+  function seccionRanking() {
+    const r = config.ranking;
+    if (!r || !hayDatos(r.jugadores)) return null;
+    const tabla = el("table", { class: "tabla ranking" },
+      el("thead", {}, el("tr", {}, ["#", "Jugador", "Nivel", "Puntos", ""].map((c) => el("th", { scope: "col", texto: c })))),
+      el("tbody", {}, r.jugadores.map((j, i) => el("tr", {},
+        el("td", {}, el("b", { class: i < 3 ? `medalla m${i + 1}` : null, texto: String(i + 1) })),
+        el("td", { texto: j.nombre }),
+        el("td", { texto: j.nivel || "" }),
+        el("td", {}, el("b", { texto: String(j.puntos) })),
+        el("td", { class: `tendencia ${j.tendencia || ""}`, "aria-label": { sube: "Sube", baja: "Baja" }[j.tendencia] || "Igual", texto: { sube: "▲", baja: "▼" }[j.tendencia] || "–" })))));
+    return seccion("ranking", "Ranking", r.titulo || "Ranking del club",
+      r.nota ? el("p", { class: "nota", texto: r.nota }) : null,
+      el("div", { class: "tabla-envoltura" }, tabla));
+  }
+
   // ---- Cinta de patrocinadores ----
   function seccionPatrocinadores() {
     const pats = config.patrocinadores || [];
@@ -175,8 +211,10 @@
   ancla = despues(ancla, seccionPartido());
   despues(ancla, seccionNoticias());
   ancla = $("#servicios");
+  ancla = despues(ancla, seccionTorneos());
   ancla = despues(ancla, seccionCalendario());
-  despues(ancla, seccionClasificacion());
+  ancla = despues(ancla, seccionClasificacion());
+  despues(ancla, seccionRanking());
   const patrocinadores = seccionPatrocinadores();
   if (patrocinadores) $("#contacto").before(patrocinadores);
 

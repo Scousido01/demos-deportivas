@@ -117,6 +117,25 @@ h1, h2, h3 { text-transform: uppercase; letter-spacing: .02em; }
 .tabla th { font-size: .75rem; text-transform: uppercase; color: var(--color-suave); }
 .tabla tr.nosotros { background: color-mix(in srgb, var(--color-secundario) 25%, transparent); font-weight: 700; }
 
+/* Torneos y americanas */
+.torneos { display: grid; gap: 1rem; }
+.torneo { display: grid; grid-template-columns: 64px 1fr; gap: 1rem; background: var(--tarjeta); border-radius: var(--radio); padding: 1.2rem; box-shadow: var(--sombra); }
+.torneo-fecha { margin: 0; display: flex; flex-direction: column; align-items: center; align-self: start; padding: .5rem 0; border-radius: 10px; background: var(--color-primario); color: #fff; font-size: .75rem; text-transform: uppercase; }
+.torneo-fecha b { font: 700 1.8rem/1 var(--fuente-titulos); color: var(--color-secundario); }
+.torneo h3 { margin: .5rem 0 .3rem; text-transform: none; }
+.torneo .nota { margin: 0; font-size: .9rem; }
+.torneo-plazas { margin: .4rem 0 0; font-weight: 600; color: var(--color-primario); font-size: .9rem; }
+.torneo .boton { margin-top: .9rem; padding: .6em 1.2em; }
+
+/* Ranking */
+.ranking td:nth-child(2) { font-weight: 600; }
+.medalla { display: inline-grid; place-items: center; width: 1.8em; height: 1.8em; border-radius: 50%; }
+.medalla.m1 { background: #f5c542; }
+.medalla.m2 { background: #cfd6de; }
+.medalla.m3 { background: #e0a370; }
+.tendencia.sube { color: var(--victoria); }
+.tendencia.baja { color: var(--derrota); }
+
 /* Patrocinadores */
 .patrocinadores { background: var(--color-texto); color: #fff; padding: 1.4rem 0; overflow: hidden; }
 .cinta { mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
@@ -125,6 +144,7 @@ h1, h2, h3 { text-transform: uppercase; letter-spacing: .02em; }
 @keyframes cinta { to { transform: translateX(-50%); } }
 
 @media (min-width: 720px) {
+  .torneos { grid-template-columns: repeat(2, 1fr); }
   .noticias { grid-template-columns: repeat(2, 1fr); }
   .noticia.destacada { grid-column: 1 / -1; display: grid; grid-template-columns: 1.3fr 1fr; }
   .noticia.destacada .noticia-img { aspect-ratio: auto; min-height: 280px; }
