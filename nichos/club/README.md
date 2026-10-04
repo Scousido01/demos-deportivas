@@ -1,7 +1,8 @@
-# Nicho: club amateur
+# Nicho: club amateur (pádel)
 
-Demo para un club deportivo de barrio (fútbol, pádel o baloncesto): tema claro con los colores
-del club, escudo, franja de equipación, noticias y calendario.
+Demo para un club de pádel de barrio (Club Pádel Ribera, ficticio): tema claro en azul y lima,
+escudo con pala y bola, noticias, liga por equipos y calendario. Sirve igual para otro deporte
+cambiando textos y datos en `config.js`.
 
 ## Qué añade sobre la base
 Además de las secciones de `base/` (portada, quiénes somos, servicios, horarios, tarifas, galería,
@@ -9,8 +10,8 @@ reservas y contacto), `nicho.js` pinta las secciones propias de un club a partir
 
 | Sección | Campo en `config.js` |
 |---|---|
-| Próximo partido con cuenta atrás y botón "Añadir a mi calendario" (.ics) | `partidos`, `equipoPrincipal` |
-| Últimos resultados con victoria, empate y derrota en colores | `partidos[].resultado` |
+| Próxima eliminatoria de la liga por equipos con cuenta atrás y botón "Añadir a mi calendario" (.ics) | `partidos`, `equipoPrincipal` |
+| Últimos resultados (parejas ganadas) con victoria, empate y derrota en colores | `partidos[].resultado` |
 | Noticias con filtro por categoría (View Transitions si el navegador las soporta) | `noticias` |
 | Calendario agrupado por mes y filtrable por equipo | `partidos` |
 | Clasificación con el club resaltado | `clasificacion` |

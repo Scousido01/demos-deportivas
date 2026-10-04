@@ -1,10 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Escudo del club">
-  <path d="M60 4 L112 18 V70 C112 104 88 126 60 136 C32 126 8 104 8 70 V18 Z" fill="#0b5d1e" stroke="#f2c230" stroke-width="6"/>
-  <path d="M60 14 L102 25 V44 H18 V25 Z" fill="#f2c230"/>
-  <text x="60" y="40" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="15" font-weight="900" fill="#0b5d1e">1978</text>
-  <g stroke="#f2c230" stroke-width="5" fill="none">
-    <path d="M24 64 Q42 54 60 64 T96 64"/>
-    <path d="M24 80 Q42 70 60 80 T96 80"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Escudo del Club Pádel Ribera">
+  <path d="M60 4 L112 18 V70 C112 104 88 126 60 136 C32 126 8 104 8 70 V18 Z" fill="#0a3d91" stroke="#c6f432" stroke-width="6"/>
+  <path d="M60 14 L102 25 V40 H18 V25 Z" fill="#c6f432"/>
+  <text x="60" y="36" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="13" font-weight="900" fill="#0a3d91">2012</text>
+  <g transform="rotate(-30 52 74)">
+    <ellipse cx="52" cy="66" rx="18" ry="22" fill="#ffffff"/>
+    <g fill="#0a3d91"><circle cx="46" cy="58" r="2.2"/><circle cx="56" cy="58" r="2.2"/><circle cx="46" cy="68" r="2.2"/><circle cx="56" cy="68" r="2.2"/><circle cx="51" cy="76" r="2.2"/></g>
+    <rect x="48" y="86" width="8" height="18" rx="3" fill="#ffffff"/>
   </g>
-  <text x="60" y="114" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="#ffffff">ATR</text>
+  <circle cx="84" cy="88" r="9" fill="#c6f432"/>
+  <path d="M77 84 Q84 88 91 84 M77 92 Q84 88 91 92" stroke="#0a3d91" stroke-width="1.5" fill="none"/>
+  <text x="60" y="122" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="900" fill="#ffffff">CPR</text>
 </svg>

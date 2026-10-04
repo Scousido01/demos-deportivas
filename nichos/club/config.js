@@ -1,55 +1,55 @@
 /*
- * Nicho club amateur: colores del club, escudo, noticias y calendario.
+ * Nicho club amateur de pádel: colores del club, escudo, noticias, liga por equipos y torneos.
  * Mismos campos que base/config.js, más los propios del club (al final del archivo),
  * que pinta nicho.js: partidos, clasificacion, noticias y patrocinadores.
  * Las imágenes son marcadores de base/img; las fotos reales van en recursos/club/ o en img/.
  */
 window.DEMO_CONFIG = {
-  negocio: { nombre: "CD Atlético Ribera", nombreCorto: "Atl. Ribera", eslogan: "Cantera, barrio y pasión desde 1978", logo: "img/escudo.svg", ciudad: "Ribera del Ebro" },
-  colores: { primario: "#0b5d1e", secundario: "#f2c230", fondo: "#f4f6f1", texto: "#14201a" },
+  negocio: { nombre: "Club Pádel Ribera", nombreCorto: "CP Ribera", eslogan: "Pádel de barrio, pistas llenas y buen ambiente", logo: "img/escudo.svg", ciudad: "Ribera del Ebro" },
+  colores: { primario: "#0a3d91", secundario: "#c6f432", fondo: "#f3f6fa", texto: "#0f1a2e" },
   portada: {
-    titulo: "Somos el Ribera",
-    subtitulo: "Escuela desde los 4 años, 18 equipos federados y un campo abierto a todo el barrio.",
-    boton: "Apunta a tu hijo o hija",
+    titulo: "Juega en el Ribera",
+    subtitulo: "8 pistas, escuela para todos los niveles, liga por equipos y torneos cada mes.",
+    boton: "Reserva tu clase de prueba",
     imagen: "img/portada.svg",
     video: "",
   },
   quienesSomos: {
-    titulo: "Más de 40 años formando deportistas",
-    texto: "El Atlético Ribera nació de un grupo de vecinos. Hoy somos una escuela con entrenadores titulados y valores que van más allá del resultado.",
-    datos: [{ valor: "1978", etiqueta: "fundación" }, { valor: "18", etiqueta: "equipos" }, { valor: "320", etiqueta: "jugadores" }, { valor: "450", etiqueta: "socios" }],
+    titulo: "El club de pádel del barrio",
+    texto: "Empezamos en 2012 con dos pistas y un grupo de amigos. Hoy somos más de 400 socios, una escuela con monitores titulados y cinco equipos en la liga federada.",
+    datos: [{ valor: "8", etiqueta: "pistas" }, { valor: "420", etiqueta: "socios" }, { valor: "5", etiqueta: "equipos federados" }, { valor: "12", etiqueta: "torneos al año" }],
   },
   servicios: [
-    { titulo: "Escuela", texto: "De 4 a 12 años, aprender jugando con entrenadores titulados.", imagen: "img/tarjeta.svg", video: "" },
-    { titulo: "Equipos federados", texto: "De alevín a senior, masculino y femenino.", imagen: "img/tarjeta.svg", video: "" },
-    { titulo: "Campus de verano", texto: "Julio en el campo: fútbol, piscina y amigos.", imagen: "img/tarjeta.svg", video: "" },
+    { titulo: "Escuela de pádel", texto: "Clases en grupos de 4 por nivel, de iniciación a competición. Peques desde los 6 años.", imagen: "img/tarjeta.svg", video: "" },
+    { titulo: "Liga por equipos", texto: "Cinco equipos en la liga federada, masculinos, femeninos y mixto.", imagen: "img/tarjeta.svg", video: "" },
+    { titulo: "Torneos y americanas", texto: "Un torneo al mes y americanas los viernes para conocer a otros jugadores.", imagen: "img/tarjeta.svg", video: "" },
   ],
-  scrollGuiado: { titulo: "Un partido en casa", textos: ["Vestuario.", "Calentamiento.", "Pitido inicial.", "¡Gol!"], ruta: "media/secuencia/frame-{n}.jpg", frames: 0, digitos: 3 },
+  scrollGuiado: { titulo: "Un viernes en el club", textos: ["Calientas.", "Peloteo.", "Bandeja.", "¡Por tres!"], ruta: "media/secuencia/frame-{n}.jpg", frames: 0, digitos: 3 },
   horarios: [
-    { dia: "Escuela", horas: "L y X · 17:30 – 19:00" },
-    { dia: "Equipos federados", horas: "L a J · 19:00 – 22:30" },
-    { dia: "Partidos", horas: "Sábados y domingos" },
-    { dia: "Oficina del club", horas: "L a V · 18:00 – 20:30" },
+    { dia: "Pistas", horas: "L a D · 08:00 – 23:30" },
+    { dia: "Escuela adultos", horas: "L a J · 18:00 – 22:00" },
+    { dia: "Escuela peques", horas: "M y J · 17:00 – 18:00" },
+    { dia: "Americanas", horas: "Viernes · 20:00" },
   ],
   tarifas: [
-    { nombre: "Socio", precio: "40 €", periodo: "/temporada", incluye: ["Entrada a todos los partidos en casa", "Descuento en la tienda", "Voto en la asamblea"] },
-    { nombre: "Familia", precio: "75 €", periodo: "/temporada", incluye: ["Hasta 2 adultos y 3 menores", "Todo lo del socio", "Bufanda de regalo"], destacada: true },
-    { nombre: "Escuela", precio: "30 €", periodo: "/mes", incluye: ["2 entrenamientos por semana", "Equipación incluida", "Seguro deportivo"] },
+    { nombre: "Socio", precio: "25 €", periodo: "/mes", incluye: ["Pista a precio de socio (8 €/hora)", "Reserva con 7 días de antelación", "Torneos internos gratis"] },
+    { nombre: "Escuela", precio: "45 €", periodo: "/mes", incluye: ["2 clases por semana en grupo de 4", "Monitor titulado", "Préstamo de pala"], destacada: true },
+    { nombre: "Pista suelta", precio: "16 €", periodo: "/hora y media", incluye: ["Sin cuota", "Luz incluida", "Reserva con 2 días"] },
   ],
   galeria: ["img/galeria.svg", "img/galeria.svg", "img/galeria.svg", "img/galeria.svg"],
   reservas: {
-    titulo: "Pide un entrenamiento de prueba",
-    actividades: ["Escuela (4–12 años)", "Equipo federado", "Campus de verano", "Hacerme socio"],
-    franjas: ["Lunes", "Miércoles", "Viernes"],
+    titulo: "Reserva tu clase de prueba",
+    actividades: ["Clase de iniciación", "Clase de perfeccionamiento", "Escuela peques", "Reservar pista"],
+    franjas: ["Mañana", "Tarde", "Noche"],
   },
   modelo3d: { titulo: "", modelo: "", colores: [] },
   contacto: {
     whatsapp: "34600000000",
-    mensajeWhatsapp: "Hola, quiero información sobre el club.",
+    mensajeWhatsapp: "Hola, quiero información sobre el club de pádel.",
     telefono: "+34 600 000 000",
-    email: "info@atleticoribera.es",
-    direccion: "Campo Municipal La Ribera, Av. del Río 12",
-    mapa: "Campo Municipal, Zaragoza",
+    email: "hola@padelribera.es",
+    direccion: "Club Pádel Ribera, Av. del Río 12",
+    mapa: "Av. del Río 12, Zaragoza",
     redes: [{ nombre: "Instagram", url: "https://instagram.com/" }, { nombre: "Facebook", url: "https://facebook.com/" }],
   },
 
@@ -59,69 +59,44 @@ window.DEMO_CONFIG = {
   // Déjala vacía ("") para usar la fecha real; fíjala para que la demo no envejezca.
   fechaDemo: "",
 
-  // Partidos de la temporada. "local: true" si jugamos en casa.
-  // Con resultado salen en "Últimos resultados"; el primero pendiente del primer equipo es el "Próximo partido".
-  equipoPrincipal: "Primer equipo",
+  // Eliminatorias de la liga por equipos (3 parejas por equipo: el resultado es parejas ganadas)
+  // y torneos del club. "local: true" si se juega en nuestras pistas.
+  // Con resultado salen en "Últimos resultados"; el primero pendiente del equipo principal es el "Próximo partido".
+  equipoPrincipal: "Masculino A",
   partidos: [
-    { fecha: "2026-09-13T18:00", equipo: "Primer equipo", rival: "UD Valdemar", local: true, competicion: "Liga", resultado: "3-1" },
-    { fecha: "2026-09-20T17:00", equipo: "Primer equipo", rival: "CF Puente Alto", local: false, competicion: "Liga", resultado: "1-1" },
-    { fecha: "2026-09-27T18:00", equipo: "Primer equipo", rival: "SD Los Pinos", local: true, competicion: "Liga", resultado: "2-0" },
-    { fecha: "2026-09-27T11:00", equipo: "Femenino", rival: "CD Arenal", local: true, competicion: "Liga", resultado: "4-2" },
-    { fecha: "2026-10-03T10:00", equipo: "Juvenil A", rival: "Racing Norte", local: false, competicion: "Liga", resultado: "0-2" },
-    { fecha: "2026-10-04T18:00", equipo: "Primer equipo", rival: "Atlético Sotillo", local: false, competicion: "Liga" },
-    { fecha: "2026-10-10T10:00", equipo: "Juvenil A", rival: "CD San Roque", local: true, competicion: "Liga" },
-    { fecha: "2026-10-11T12:00", equipo: "Femenino", rival: "Unión Vega", local: false, competicion: "Liga" },
-    { fecha: "2026-10-11T18:00", equipo: "Primer equipo", rival: "CD Mirador", local: true, competicion: "Liga" },
-    { fecha: "2026-10-14T20:30", equipo: "Primer equipo", rival: "UD Las Eras", local: true, competicion: "Copa Federación" },
-    { fecha: "2026-10-18T17:00", equipo: "Primer equipo", rival: "Real Olivar", local: false, competicion: "Liga" },
-    { fecha: "2026-10-18T11:00", equipo: "Femenino", rival: "CF Ribazo", local: true, competicion: "Liga" },
-    { fecha: "2026-10-24T10:00", equipo: "Juvenil A", rival: "Atlético Sotillo", local: false, competicion: "Liga" },
-    { fecha: "2026-10-25T18:00", equipo: "Primer equipo", rival: "SD Fuentefría", local: true, competicion: "Liga" },
+    { fecha: "2026-09-13T10:00", equipo: "Masculino A", rival: "Pádel Valdemar", local: true, competicion: "Liga por equipos", resultado: "2-1" },
+    { fecha: "2026-09-20T10:00", equipo: "Masculino A", rival: "Indoor Puente Alto", local: false, competicion: "Liga por equipos", resultado: "1-2" },
+    { fecha: "2026-09-20T16:00", equipo: "Femenino A", rival: "CP Los Pinos", local: true, competicion: "Liga por equipos", resultado: "3-0" },
+    { fecha: "2026-09-27T10:00", equipo: "Masculino A", rival: "Club Arenal Pádel", local: true, competicion: "Liga por equipos", resultado: "3-0" },
+    { fecha: "2026-10-03T17:00", equipo: "Mixto", rival: "Racket Norte", local: false, competicion: "Liga por equipos", resultado: "2-1" },
+    { fecha: "2026-10-04T10:00", equipo: "Masculino A", rival: "Sotillo Pádel", local: false, competicion: "Liga por equipos" },
+    { fecha: "2026-10-04T16:00", equipo: "Femenino A", rival: "Vega Indoor", local: false, competicion: "Liga por equipos" },
+    { fecha: "2026-10-11T10:00", equipo: "Masculino A", rival: "CP Mirador", local: true, competicion: "Liga por equipos" },
+    { fecha: "2026-10-17T17:00", equipo: "Mixto", rival: "Pádel Las Eras", local: true, competicion: "Liga por equipos" },
+    { fecha: "2026-10-18T10:00", equipo: "Masculino A", rival: "Olivar Pádel Club", local: false, competicion: "Liga por equipos" },
+    { fecha: "2026-10-18T16:00", equipo: "Femenino A", rival: "CP Ribazo", local: true, competicion: "Liga por equipos" },
+    { fecha: "2026-10-25T10:00", equipo: "Masculino A", rival: "Fuentefría Pádel", local: true, competicion: "Liga por equipos" },
   ],
 
   clasificacion: {
-    titulo: "Primera Regional · Grupo 2",
+    titulo: "Liga por equipos · 2ª categoría masculina",
     actualizada: "2026-09-28",
     filas: [
-      { equipo: "CD Atlético Ribera", pj: 3, g: 2, e: 1, p: 0, puntos: 7, nosotros: true },
-      { equipo: "Real Olivar", pj: 3, g: 2, e: 0, p: 1, puntos: 6 },
-      { equipo: "CF Puente Alto", pj: 3, g: 1, e: 2, p: 0, puntos: 5 },
-      { equipo: "CD Mirador", pj: 3, g: 1, e: 1, p: 1, puntos: 4 },
-      { equipo: "Atlético Sotillo", pj: 3, g: 1, e: 0, p: 2, puntos: 3 },
-      { equipo: "UD Valdemar", pj: 3, g: 0, e: 1, p: 2, puntos: 1 },
+      { equipo: "Club Pádel Ribera", pj: 3, g: 2, e: 0, p: 1, puntos: 6, nosotros: true },
+      { equipo: "Indoor Puente Alto", pj: 3, g: 2, e: 0, p: 1, puntos: 6 },
+      { equipo: "Olivar Pádel Club", pj: 3, g: 2, e: 0, p: 1, puntos: 6 },
+      { equipo: "CP Mirador", pj: 3, g: 1, e: 0, p: 2, puntos: 3 },
+      { equipo: "Sotillo Pádel", pj: 3, g: 1, e: 0, p: 2, puntos: 3 },
+      { equipo: "Pádel Valdemar", pj: 3, g: 1, e: 0, p: 2, puntos: 3 },
     ],
   },
 
   noticias: [
-    {
-      fecha: "2026-09-28",
-      categoria: "Primer equipo",
-      titulo: "Tercera victoria seguida y líderes en solitario",
-      resumen: "Dos goles en la segunda parte ante Los Pinos dejan al equipo arriba tras tres jornadas.",
-      imagen: "img/tarjeta.svg",
-    },
-    {
-      fecha: "2026-09-24",
-      categoria: "Escuela",
-      titulo: "Abiertas las inscripciones de la escuela 2026-27",
-      resumen: "Plazas para niños y niñas de 4 a 12 años. Primer entrenamiento de prueba gratis.",
-      imagen: "img/tarjeta.svg",
-    },
-    {
-      fecha: "2026-09-18",
-      categoria: "Femenino",
-      titulo: "El femenino estrena equipación y patrocinador",
-      resumen: "Panadería La Espiga se une al proyecto del primer equipo femenino del club.",
-      imagen: "img/tarjeta.svg",
-    },
-    {
-      fecha: "2026-09-10",
-      categoria: "Club",
-      titulo: "Fiesta de presentación de todos los equipos",
-      resumen: "Más de 600 personas llenaron el campo municipal para conocer las plantillas de la temporada.",
-      imagen: "img/tarjeta.svg",
-    },
+    { fecha: "2026-09-28", categoria: "Liga", titulo: "El Masculino A gana 3-0 y se coloca líder", resumen: "Las tres parejas ganaron en dos sets ante el Arenal. Empate a puntos arriba con Puente Alto y Olivar.", imagen: "img/tarjeta.svg" },
+    { fecha: "2026-09-25", categoria: "Torneos", titulo: "Abiertas las inscripciones del Torneo de otoño", resumen: "Categorías masculina, femenina y mixta por niveles. 10 y 11 de octubre, con regalo de bienvenida.", imagen: "img/tarjeta.svg" },
+    { fecha: "2026-09-18", categoria: "Escuela", titulo: "Nuevos grupos de iniciación por las mañanas", resumen: "Grupos de 4 a las 10:00 y a las 11:30 para quien no puede por la tarde. Primera clase gratis.", imagen: "img/tarjeta.svg" },
+    { fecha: "2026-09-10", categoria: "Club", titulo: "Estrenamos césped en las pistas 1 a 4", resumen: "Césped nuevo de última generación y LED en todas las pistas cubiertas.", imagen: "img/tarjeta.svg" },
   ],
 
-  patrocinadores: ["Panadería La Espiga", "Talleres Ebro", "Farmacia Plaza", "Bar El Rincón", "Seguros Ribera"],
+  patrocinadores: ["Deportes Ebro", "Fisioterapia Plaza", "Bar El Rincón", "Seguros Ribera", "Ópticas Vista"],
 };

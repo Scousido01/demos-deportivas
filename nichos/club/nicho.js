@@ -45,7 +45,7 @@
       `UID:${f(p.d)}-${p.rival.replace(/\W/g, "")}@demos-deportivas`, `DTSTAMP:${f(new Date())}`,
       `DTSTART:${f(p.d)}`, `DTEND:${f(new Date(p.d.getTime() + 2 * 3600e3))}`,
       `SUMMARY:${local(p)} - ${visitante(p)} (${p.equipo})`,
-      `LOCATION:${p.local ? (config.contacto || {}).direccion || "" : "Campo del " + p.rival}`,
+      `LOCATION:${p.local ? (config.contacto || {}).direccion || "" : "Pistas de " + p.rival}`,
       "END:VEVENT", "END:VCALENDAR",
     ];
     return "data:text/calendar;charset=utf-8," + encodeURIComponent(lineas.join("\r\n"));
