@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Escudo provisional de Vigopadel (marcador, falta el logo real)">
+  <path d="M60 4 L112 18 V70 C112 104 88 126 60 136 C32 126 8 104 8 70 V18 Z" fill="#0b3a5b" stroke="#ffc629" stroke-width="6"/>
+  <path d="M14 56 Q37 46 60 56 T106 56 V64 Q83 54 60 64 T14 64 Z" fill="#2c7fb8" opacity=".55"/>
+  <path d="M14 68 Q37 58 60 68 T106 68 V76 Q83 66 60 76 T14 76 Z" fill="#2c7fb8" opacity=".35"/>
+  <g transform="rotate(-30 50 50)">
+    <ellipse cx="50" cy="40" rx="15" ry="19" fill="#ffffff"/>
+    <g fill="#0b3a5b"><circle cx="45" cy="33" r="2"/><circle cx="55" cy="33" r="2"/><circle cx="45" cy="42" r="2"/><circle cx="55" cy="42" r="2"/><circle cx="50" cy="49" r="2"/></g>
+    <rect x="46.5" y="58" width="7" height="15" rx="3" fill="#ffffff"/>
+  </g>
+  <circle cx="82" cy="36" r="8" fill="#ffc629"/>
+  <path d="M76 32 Q82 36 88 32 M76 40 Q82 36 88 40" stroke="#0b3a5b" stroke-width="1.4" fill="none"/>
+  <text x="60" y="104" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="15" font-weight="900" fill="#ffffff">VIGO</text>
+  <text x="60" y="120" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="12" font-weight="900" fill="#ffc629">PADEL</text>
+</svg>
