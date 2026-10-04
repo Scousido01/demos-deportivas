@@ -1,0 +1,125 @@
+/* Gimnasio Simón: estilo clásico de gimnasio de barrio con historia.
+   Cartel de velada antigua: fondo tostado oscuro, crema, rojo de ring y dorado de cinturón,
+   titulares con serifa y filetes dobles. Los colores vienen de config.js y los efectos de base/. */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Libre+Franklin:wght@400;600;700&display=swap");
+
+:root {
+  --fuente-titulos: "Playfair Display", Georgia, "Times New Roman", serif;
+  --fuente-texto: "Libre Franklin", system-ui, sans-serif;
+  --radio: 2px; /* esquinas rectas, como un cartel impreso */
+  --filete: 3px double var(--color-secundario);
+}
+
+body {
+  /* papel envejecido muy sutil */
+  background-image: radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--color-secundario) 7%, transparent), transparent 60%);
+}
+
+h1, h2, h3 { font-weight: 900; letter-spacing: -.01em; }
+h1 { font-size: clamp(2.4rem, 7.5vw, 5rem); max-width: 14em; }
+h2 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h3 { font-weight: 700; }
+
+/* Antetítulo "Desde 1992" encima de cada sección */
+.bloque > h2::before {
+  content: "Desde 1992";
+  display: block;
+  margin-bottom: .6em;
+  font: 700 .78rem/1 var(--fuente-texto);
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--color-secundario);
+}
+.bloque > h2::after {
+  content: "";
+  display: block;
+  width: 72px;
+  margin-top: .35em;
+  border-bottom: var(--filete);
+}
+
+.cabecera { border-bottom: 1px solid color-mix(in srgb, var(--color-secundario) 35%, transparent); }
+.marca img { height: 46px; }
+.menu a { font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .85rem; }
+
+/* Botones rectos con borde dorado */
+.boton {
+  border-radius: var(--radio);
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .9rem;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-secundario) 60%, transparent);
+}
+.boton:hover { filter: none; background: color-mix(in srgb, var(--color-primario) 85%, #000); }
+
+/* Portada con viñeta y sello */
+.portada-media::before {
+  content: "";
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 40%, rgb(0 0 0 / .55));
+}
+@media (min-width: 860px) {
+  .portada-texto { border-left: var(--filete); padding-left: calc(var(--hueco) + 8px); }
+}
+.portada-texto::before {
+  content: "Est. 1992 · Vigo";
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  border: 1px solid var(--color-secundario);
+  color: var(--color-secundario);
+  font: 700 .75rem/1 var(--fuente-texto);
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+
+/* Cifras en dorado, separadas por filetes */
+.datos li {
+  background: transparent;
+  border-top: var(--filete);
+  border-radius: 0;
+  padding: 20px 4px 0;
+}
+.datos strong {
+  font-family: var(--fuente-titulos);
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  color: var(--color-secundario);
+}
+
+/* Tarjetas como fotos enmarcadas */
+.tarjeta { border: 1px solid var(--color-borde); }
+.tarjeta-media { border-bottom: 3px solid var(--color-primario); }
+.tarjeta-media img { filter: sepia(.25) contrast(1.05); }
+
+/* Horarios como una tabla de cartel */
+.horarios dt { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.1rem; }
+.horarios dd { color: var(--color-secundario); }
+
+/* Tarifas */
+.precio { color: var(--color-secundario); font-family: var(--fuente-titulos); }
+.tarifa { border: 1px solid var(--color-borde); }
+.tarifa.destacada { border: 2px solid var(--color-secundario); position: relative; }
+.tarifa.destacada::before {
+  content: "La más elegida";
+  position: absolute; top: -12px; left: 24px;
+  padding: 3px 10px;
+  background: var(--color-primario);
+  color: var(--color-texto);
+  font: 700 .7rem/1.4 var(--fuente-texto);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+/* Galería en tonos cálidos, a color al pasar por encima */
+.galeria figure { border: 1px solid var(--color-borde); }
+.galeria img { filter: sepia(.35); }
+.galeria figure:hover img { filter: none; }
+
+.reservas { border: 1px solid var(--color-borde); }
+.opcion span, .campos input { border-radius: var(--radio); }
+
+.pie { border-top: var(--filete); font-family: var(--fuente-titulos); letter-spacing: .04em; }
+
+/* Seis disciplinas: rejilla de 3 en escritorio para que no queden huérfanas */
+@media (min-width: 860px) { .tarjetas { grid-template-columns: repeat(3, 1fr); } }

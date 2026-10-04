@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- Marcador de galería: saco de boxeo. Sustituir por fotos reales. -->
+  <rect width="600" height="600" fill="#211710"/>
+  <line x1="300" y1="0" x2="300" y2="140" stroke="#8a7a5c" stroke-width="6"/>
+  <rect x="230" y="140" width="140" height="330" rx="40" fill="#5e1418"/>
+  <rect x="230" y="200" width="140" height="14" fill="#c9a24a" opacity=".8"/>
+  <rect x="230" y="400" width="140" height="14" fill="#c9a24a" opacity=".8"/>
+  <ellipse cx="300" cy="545" rx="150" ry="18" fill="#000" opacity=".35"/>
+</svg>
