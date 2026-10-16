@@ -1,0 +1,160 @@
+{
+  "negocios": [
+    {
+      "nombre": "Gimnasio Simón",
+      "web": "gimnasiosimon.es",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads: web sin HTTPS, copyright 2012",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Florida Gym",
+      "web": "floridagym.es",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Gimnasio Athenas",
+      "web": "gimnasioathenasvigo.com",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Penta Deporte y Salud",
+      "web": "pentadeporteysalud.com",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "La Vieja Escuela Gym",
+      "web": "laviejaescuelagym.com",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "In Legatum Sport Club",
+      "web": "",
+      "veredicto": "reserva",
+      "motivo": "En la lista de leads como reserva",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Street Flow",
+      "web": "",
+      "veredicto": "reserva",
+      "motivo": "En la lista de leads como reserva",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Vigopadel",
+      "web": "vigopadel.com",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads: certificado TLS inválido, WordPress 4.9",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Indoorvigo",
+      "web": "indoorvigo.com",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Rec Fitness & Padel Club",
+      "web": "recfitness.es",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Arenga Padel Club",
+      "web": "arenga.es",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Club de Campo de Vigo",
+      "web": "clubdecampodevigo.com",
+      "veredicto": "lead",
+      "motivo": "Ya en la lista de leads",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Win Pádel Club",
+      "web": "winpadelclub.com",
+      "veredicto": "reserva",
+      "motivo": "En la lista de leads como reserva",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Box 004",
+      "web": "",
+      "veredicto": "descartado",
+      "motivo": "Franquicia",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Ipadel Fitness",
+      "web": "",
+      "veredicto": "descartado",
+      "motivo": "Ya tiene reservas online modernas",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "El Olivo Pádel",
+      "web": "",
+      "veredicto": "descartado",
+      "motivo": "Ya tiene reservas online modernas",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Twelve Padel Zenter",
+      "web": "",
+      "veredicto": "descartado",
+      "motivo": "Demasiado grande",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    },
+    {
+      "nombre": "Máis que Auga",
+      "web": "",
+      "veredicto": "descartado",
+      "motivo": "Cadena",
+      "fecha": "2026-10-04",
+      "fuente": "leads-vigo.md (búsqueda web del 2026-10-04)"
+    }
+  ],
+  "busquedas": [
+    {
+      "categoria": "gimnasios",
+      "zona": "Vigo",
+      "fecha": "2026-10-04"
+    },
+    {
+      "categoria": "clubes de pádel",
+      "zona": "Vigo",
+      "fecha": "2026-10-04"
+    }
+  ]
+}

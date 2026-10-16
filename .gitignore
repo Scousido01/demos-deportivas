@@ -1,3 +1,8 @@
 dist/
 node_modules/
 .DS_Store
+# Prospector: capturas y PDF pesan y van en el borrador de Gmail, no en el repo
+prospector/leads/*/*.png
+prospector/leads/*/*.pdf
+clientes/*/hoja.jpg
+__pycache__/
